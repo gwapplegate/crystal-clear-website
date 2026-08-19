@@ -132,4 +132,21 @@ document.addEventListener('DOMContentLoaded', () => {
       el.style.transform = 'none';
     });
   }
+
+  /* ---------- Safety net ----------
+     Scroll-reveal is progressive enhancement, not a gate. If a slow/blocked
+     CDN load or a ScrollTrigger miscalculation ever leaves elements stuck
+     at their pre-animation opacity, this guarantees they become visible
+     no matter what went wrong above. */
+  window.addEventListener('load', () => {
+    if (window.ScrollTrigger) ScrollTrigger.refresh();
+  });
+  setTimeout(() => {
+    document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right').forEach((el) => {
+      if (getComputedStyle(el).opacity !== '1') {
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+      }
+    });
+  }, 2500);
 });
