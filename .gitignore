@@ -1,0 +1,9 @@
+# Local dev config
+.claude/
+
+# Loose source photos not part of the live site (already copied into images/)
+*.png
+!images/**/*.png
+
+.DS_Store
+Thumbs.db

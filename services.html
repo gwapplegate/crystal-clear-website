@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services | Crystal Clear Window Cleaning Service Inc.</title>
+<meta name="description" content="Window cleaning, gutter cleaning, roof washing & pressure washing for homes across the Greater Triad, NC. See what's included in every service." />
+<link rel="icon" href="images/crystal-clear-logo.png" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: { 50:'#eef1fb',100:'#d7ddf3',400:'#3d5199',700:'#1b2f6e',800:'#142457',900:'#0f1a42',950:'#0a1130' },
+          brand: { 50:'#eef6ff',100:'#dcebff',300:'#8fbdfa',400:'#5aa2ff',500:'#2f87f5',600:'#1e6fe0',700:'#1857b3' },
+        },
+        fontFamily: {
+          heading: ['Oswald','sans-serif'],
+          sans: ['Inter','system-ui','sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="antialiased bg-white text-slate-900">
+
+<!-- ============ TOP INFO BAR ============ -->
+<div class="hidden md:block bg-navy-950 text-white/80 text-xs">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-9 flex items-center justify-between">
+    <p class="font-heading tracking-wide uppercase text-[11px] text-white/70">Family-Operated Since 1997 &middot; Fully Insured &middot; Serving the Greater Triad, NC</p>
+    <div class="flex items-center gap-5">
+      <a href="tel:+13365952873" class="flex items-center gap-1.5 hover:text-brand-300 transition-colors">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-3.5 h-3.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h.75a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106a2.25 2.25 0 00-2.294.617l-.497.497a.75.75 0 01-.966.083 12.735 12.735 0 01-6.13-6.13.75.75 0 01.084-.966l.497-.497a2.25 2.25 0 00.617-2.294L6.213 3.102a1.125 1.125 0 00-1.091-.852H3.75A1.5 1.5 0 002.25 3.75v3z"/></svg>
+        (336) 595-2873
+      </a>
+      <a href="mailto:scrystalclear@aol.com" class="flex items-center gap-1.5 hover:text-brand-300 transition-colors">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-3.5 h-3.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+        scrystalclear@aol.com
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header id="site-nav" class="sticky top-0 z-50 bg-white/95 backdrop-blur">
+  <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-48 sm:h-60 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 shrink-0 -ml-16 sm:-ml-20 lg:-ml-24">
+      <img src="images/crystal-clear-logo-transparent.png" alt="Crystal Clear Window Cleaning Service Inc. logo" class="h-44 sm:h-56 w-auto" />
+    </a>
+
+    <div class="hidden lg:flex items-center gap-9 font-heading uppercase text-sm tracking-wide text-navy-900">
+      <a href="index.html" class="hover:text-brand-600 transition-colors">Home</a>
+      <a href="services.html" class="text-brand-600">Services</a>
+      <a href="about.html" class="hover:text-brand-600 transition-colors">About</a>
+      <a href="reviews.html" class="hover:text-brand-600 transition-colors">Reviews</a>
+      <a href="index.html#contact" class="hover:text-brand-600 transition-colors">Contact</a>
+    </div>
+
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="tel:+13365952873" class="btn btn-ghost-navy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h.75a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106a2.25 2.25 0 00-2.294.617l-.497.497a.75.75 0 01-.966.083 12.735 12.735 0 01-6.13-6.13.75.75 0 01.084-.966l.497-.497a2.25 2.25 0 00.617-2.294L6.213 3.102a1.125 1.125 0 00-1.091-.852H3.75A1.5 1.5 0 002.25 3.75v3z"/></svg>
+        Call Now
+      </a>
+      <a href="index.html#contact" class="btn btn-primary">Free Estimate</a>
+    </div>
+
+    <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden p-2 -mr-2 text-navy-900">
+      <svg id="icon-menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
+      <svg id="icon-menu-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7 hidden"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="lg:hidden bg-white border-t border-navy-100">
+    <div class="px-6 py-5 flex flex-col gap-4 font-heading uppercase text-sm tracking-wide text-navy-900">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="index.html#contact">Contact</a>
+      <div class="flex flex-col gap-3 pt-2">
+        <a href="tel:+13365952873" class="btn btn-navy w-full">Call (336) 595-2873</a>
+        <a href="mailto:scrystalclear@aol.com" class="btn btn-primary w-full">Email Us</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="relative overflow-hidden bg-navy-950 py-28">
+  <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-brand-600/20 blur-3xl"></div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative">
+    <p class="reveal eyebrow on-dark mb-4">Our Services</p>
+    <h1 class="reveal font-heading text-white text-5xl sm:text-6xl font-semibold text-balance max-w-2xl">Every job, done to a spotless standard.</h1>
+    <p class="reveal text-white/70 text-lg max-w-xl mt-5 leading-relaxed">Window cleaning, gutter cleaning, roof washing, and pressure washing for homes across the Greater Triad. Have a quick question about your project? Reach out any time.</p>
+    <div class="reveal flex flex-wrap gap-4 mt-8">
+      <a href="tel:+13365952873" class="btn btn-primary">Call (336) 595-2873</a>
+      <a href="sms:+13365952873" class="btn btn-outline">Text for a Quote</a>
+      <a href="mailto:scrystalclear@aol.com" class="btn btn-outline">Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Reusable quick-contact strip used after every service -->
+<!-- ============ WINDOW CLEANING ============ -->
+<section id="window-cleaning" class="py-24 lg:py-28 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal-left photo-slot rounded-2xl aspect-[4/3]">
+      <img src="images/services/window-cleaning-1.jpg" alt="Squeegee cleaning glass window pane, streak-free finish" onerror="this.style.display='none'" />
+    </div>
+    <div class="reveal-right">
+      <span class="step-index">01</span>
+      <h2 class="font-heading text-3xl sm:text-4xl text-navy-900 font-semibold mt-3">Window Cleaning</h2>
+      <p class="text-slate-600 text-lg mt-4 leading-relaxed">Residential and commercial window cleaning for every style of window &mdash; frames, sills, mirrors, skylights and fixtures included. We guarantee a streak-free finish, inside and out.</p>
+      <ul class="mt-6 space-y-3">
+        <li class="flex gap-3 text-navy-900"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg><span>Interior &amp; exterior glass, frames &amp; sills</span></li>
+        <li class="flex gap-3 text-navy-900"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg><span>Screen &amp; track cleaning</span></li>
+        <li class="flex gap-3 text-navy-900"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg><span>Skylights, mirrors &amp; hard-to-reach fixtures</span></li>
+        <li class="flex gap-3 text-navy-900"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg><span>Streak-free guarantee</span></li>
+      </ul>
+      <div class="flex flex-wrap gap-3 mt-8">
+        <a href="tel:+13365952873" class="btn btn-primary">Call for a Quote</a>
+        <a href="sms:+13365952873?&body=Hi%2C%20I%27d%20like%20a%20quote%20for%20window%20cleaning." class="btn btn-ghost-navy">Text Us</a>
+        <a href="mailto:scrystalclear@aol.com?subject=Window%20Cleaning%20Estimate" class="btn btn-ghost-navy">Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-7xl mx-auto px-6 lg:px-10"><div class="hairline"></div></div>
+
+<!-- ============ GUTTER CLEANING ============ -->
+<section id="gutter-cleaning" class="py-24 lg:py-28 scroll-mt-24 bg-sky-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal-left photo-slot rounded-2xl aspect-[4/3] order-2 lg:order-1">
+      <img src="images/services/gutter-cleaning-1.jpg" alt="Clean gutter and downspout free of leaves and debris" onerror="this.style.display='none'" />
+    </div>
+    <div class="reveal-right order-1 lg:order-2">
+      <span class="step-index">02</span>
+      <h2 class="font-heading text-3xl sm:text-4xl text-navy-900 font-semibold mt-3">Gutter Cleaning</h2>
+      <p class="text-slate-600 text-lg mt-4 leading-relaxed">Hand-cleaned gutters and downspouts, using ladder stabilizers so we never rest weight directly on your gutters. Every gutter is flushed and flow-tested when we're done.</p>
+      <ul class="mt-6 space-y-3">
+        <li class="flex gap-3 text-navy-900"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg><span>Hand-cleared leaves &amp; debris removal</span></li>
+        <li class="flex gap-3 text-navy-900"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg><span>Downspout flow-testing</span></li>
+        <li class="flex gap-3 text-navy-900"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg><span>Exterior black-streak removal</span></li>
+      </ul>
+      <div class="flex flex-wrap gap-3 mt-8">
+        <a href="tel:+13365952873" class="btn btn-primary">Call for a Quote</a>
+        <a href="sms:+13365952873?&body=Hi%2C%20I%27d%20like%20a%20quote%20for%20gutter%20cleaning." class="btn btn-ghost-navy">Text Us</a>
+        <a href="mailto:scrystalclear@aol.com?subject=Gutter%20Cleaning%20Estimate" class="btn btn-ghost-navy">Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESSURE WASHING ============ -->
+<section id="pressure-washing" class="py-24 lg:py-28 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal-left photo-slot rounded-2xl aspect-[4/3] order-2 lg:order-1">
+        <img src="images/services/pressure-washing-1.jpg" alt="Pressure washer cleaning a concrete driveway" onerror="this.style.display='none'" />
+      </div>
+      <div class="reveal-right order-1 lg:order-2">
+        <span class="step-index">03</span>
+        <h2 class="font-heading text-3xl sm:text-4xl text-navy-900 font-semibold mt-3">Pressure Washing</h2>
+        <p class="text-slate-600 text-lg mt-4 leading-relaxed">A full exterior refresh, tailored to the surface. We use biodegradable solutions and soft-wash brushes on wood and siding, and higher pressure on concrete &mdash; so everything gets clean without getting damaged.</p>
+        <div class="flex flex-wrap gap-3 mt-8">
+          <a href="tel:+13365952873" class="btn btn-primary">Call for a Quote</a>
+          <a href="sms:+13365952873?&body=Hi%2C%20I%27d%20like%20a%20quote%20for%20pressure%20washing." class="btn btn-ghost-navy">Text Us</a>
+          <a href="mailto:scrystalclear@aol.com?subject=Pressure%20Washing%20Estimate" class="btn btn-ghost-navy">Email Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16" data-stagger>
+      <div class="reveal bg-sky-50 rounded-xl p-6 border border-navy-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-7 h-7 text-brand-600 mb-3"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg>
+        <h3 class="font-heading text-lg text-navy-900 font-semibold">Roof Washing</h3>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Low-pressure soft-wash that lifts moss, algae &amp; black streaks from shingles, safely.</p>
+      </div>
+      <div class="reveal bg-sky-50 rounded-xl p-6 border border-navy-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-7 h-7 text-brand-600 mb-3"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.97a.75.75 0 01.75-.75h6a.75.75 0 01.75.75V21M3 9l9-6 9 6v10.5a.75.75 0 01-.75.75H3.75a.75.75 0 01-.75-.75V9z"/></svg>
+        <h3 class="font-heading text-lg text-navy-900 font-semibold">House Exteriors &amp; Siding</h3>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Soft-wash cleaning that lifts grime and mildew without stripping paint or damaging siding.</p>
+      </div>
+      <div class="reveal bg-sky-50 rounded-xl p-6 border border-navy-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-7 h-7 text-brand-600 mb-3"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5M5.25 3.75h13.5A1.5 1.5 0 0120.25 5.25v13.5a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V5.25a1.5 1.5 0 011.5-1.5z"/></svg>
+        <h3 class="font-heading text-lg text-navy-900 font-semibold">Driveways &amp; Walkways</h3>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Concrete, brick &amp; pavers lifted back to their original color, oil stains and all.</p>
+      </div>
+      <div class="reveal bg-sky-50 rounded-xl p-6 border border-navy-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-7 h-7 text-brand-600 mb-3"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15l-1.5 8.25H6L4.5 3zM6 11.25L4.5 21m13.5-9.75L19.5 21"/></svg>
+        <h3 class="font-heading text-lg text-navy-900 font-semibold">Patios &amp; Decks</h3>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Wood-safe, low-pressure cleaning for decks; deep cleaning for stone and concrete patios.</p>
+      </div>
+      <div class="reveal bg-sky-50 rounded-xl p-6 border border-navy-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-7 h-7 text-brand-600 mb-3"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 6a2 2 0 002 2h12a2 2 0 002-2M4 6l1-3h14l1 3M6 10v9a1 1 0 001 1h1a1 1 0 001-1v-4h6v4a1 1 0 001 1h1a1 1 0 001-1v-9"/></svg>
+        <h3 class="font-heading text-lg text-navy-900 font-semibold">Outdoor Furniture</h3>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Patio sets, cushions &amp; frames refreshed and ready for the season.</p>
+      </div>
+      <div class="reveal bg-sky-50 rounded-xl p-6 border border-navy-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-7 h-7 text-brand-600 mb-3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-2.227l-1.591 1.591M5.25 12H3m2.227-4.773L3.636 5.636M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <h3 class="font-heading text-lg text-navy-900 font-semibold">Outdoor Light Fixtures</h3>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Grime and cobweb removal so your exterior lighting looks as good as it works.</p>
+      </div>
+      <div class="reveal bg-sky-50 rounded-xl p-6 border border-navy-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-7 h-7 text-brand-600 mb-3"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18v18H3V3zm4.5 4.5h9m-9 4.5h9m-9 4.5h9"/></svg>
+        <h3 class="font-heading text-lg text-navy-900 font-semibold">Faces &amp; Trim</h3>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">The detail work that finishes the job &mdash; faces and trim, streak-free.</p>
+      </div>
+      <div class="reveal bg-sky-50 rounded-xl p-6 border border-navy-100">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-7 h-7 text-brand-600 mb-3"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18v18H3V3zm0 9h18M12 3v18"/></svg>
+        <h3 class="font-heading text-lg text-navy-900 font-semibold">Skylight Cleaning</h3>
+        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Streak-free cleaning for skylights and hard-to-reach roof glass, inside and out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="bg-navy-950 py-24 relative overflow-hidden">
+  <div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-brand-600/20 blur-3xl"></div>
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center relative reveal-scale">
+    <h2 class="font-heading text-4xl sm:text-5xl text-white font-semibold text-balance">Not sure which service you need?</h2>
+    <p class="text-white/70 text-lg mt-5 max-w-xl mx-auto leading-relaxed">Tell us a bit about your property and we'll recommend the right service &mdash; free, no obligation.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+      <a href="tel:+13365952873" class="btn btn-primary text-base px-8 py-4">Call (336) 595-2873</a>
+      <a href="sms:+13365952873" class="btn btn-outline text-base px-8 py-4">Text Us</a>
+      <a href="mailto:scrystalclear@aol.com" class="btn btn-outline text-base px-8 py-4">Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-white pt-16 pb-8 border-t border-navy-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <img src="images/crystal-clear-logo-transparent.png" alt="Crystal Clear Window Cleaning Service Inc." class="h-44 sm:h-52 w-auto mb-4 -ml-4" />
+      <p class="text-slate-600 text-sm leading-relaxed">Family-operated exterior cleaning serving the Greater Triad, NC since 1997.</p>
+    </div>
+    <div>
+      <h4 class="font-heading text-sm uppercase tracking-wide text-navy-900 font-semibold mb-4">Navigate</h4>
+      <ul class="space-y-2.5 text-sm text-slate-600">
+        <li><a href="index.html" class="hover:text-brand-600">Home</a></li>
+        <li><a href="services.html" class="hover:text-brand-600">Services</a></li>
+        <li><a href="about.html" class="hover:text-brand-600">About</a></li>
+        <li><a href="reviews.html" class="hover:text-brand-600">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-heading text-sm uppercase tracking-wide text-navy-900 font-semibold mb-4">Services</h4>
+      <ul class="space-y-2.5 text-sm text-slate-600">
+        <li><a href="services.html#window-cleaning" class="hover:text-brand-600">Window Cleaning</a></li>
+        <li><a href="services.html#gutter-cleaning" class="hover:text-brand-600">Gutter Cleaning</a></li>
+        <li><a href="services.html#pressure-washing" class="hover:text-brand-600">Pressure Washing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-heading text-sm uppercase tracking-wide text-navy-900 font-semibold mb-4">Contact</h4>
+      <ul class="space-y-2.5 text-sm text-slate-600">
+        <li><a href="tel:+13365952873" class="hover:text-brand-600">(336) 595-2873</a></li>
+        <li><a href="mailto:scrystalclear@aol.com" class="hover:text-brand-600 break-all">scrystalclear@aol.com</a></li>
+        <li>7089 Old Valley School Rd,<br />Kernersville, NC 27284</li>
+        <li><a href="https://maps.app.goo.gl/f6LDcHkitmZgUZG16" target="_blank" rel="noopener" class="hover:text-brand-600">Google Business Profile</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 mt-12 pt-6 border-t border-navy-100 text-xs text-slate-400 flex flex-col sm:flex-row justify-between gap-2">
+    <p>&copy; <span data-year></span> Crystal Clear Window Cleaning Service Inc. All rights reserved.</p>
+    <p>Serving Kernersville, Winston-Salem, Greensboro, High Point &amp; the Greater Triad, NC</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
