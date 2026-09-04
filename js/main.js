@@ -2,6 +2,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- Meta Pixel: track quote-request clicks as Leads ----------
+     Fires on every call / text / email link sitewide (nav, footer, hero,
+     service CTAs, contact page cards) — these are the actual "someone
+     tried to reach us" moments. */
+  document.querySelectorAll('a[href^="tel:"], a[href^="sms:"], a[href^="mailto:"]').forEach((el) => {
+    el.addEventListener('click', () => {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+    });
+  });
+
   /* ---------- Mobile menu ---------- */
   const menuBtn = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
