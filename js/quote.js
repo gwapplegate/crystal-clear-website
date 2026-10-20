@@ -1,4 +1,4 @@
-/* Quote request form — submits via Web3Forms, falls back to a prefilled email until an access key is set */
+/* Estimate request form — submits via Web3Forms, falls back to a prefilled email until an access key is set */
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('quote-form');
   if (!form) return;
@@ -47,11 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const address = `${val('street')}, ${val('city')}, ${val('state') || 'NC'} ${val('zip')}`;
     const details = {
       'Services requested': services.join(', '),
-      'Property type': val('property_type'),
-      'Stories': val('stories') || 'Not sure',
-      'Approx. # of windows': val('window_count') || 'Not given',
-      'Window cleaning type': val('window_scope') || 'N/A',
-      'Timeframe': val('timeframe'),
       'Service address': address,
       'Name': val('name'),
       'Phone': val('phone'),
@@ -65,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* No access key configured yet: open a prefilled email instead of failing silently */
     if (!accessKey || accessKey.startsWith('YOUR_')) {
       const body = Object.entries(details).map(([k, v]) => `${k}: ${v}`).join('\n');
-      window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent('Quote Request — ' + val('name'))}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent('Estimate Request — ' + val('name'))}&body=${encodeURIComponent(body)}`;
       showSuccess();
       return;
     }
@@ -80,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: val('subject') || 'New Quote Request',
+          subject: val('subject') || 'New Estimate Request',
           from_name: val('from_name') || 'Crystal Clear Website',
           replyto: val('email'),
           name: val('name'),

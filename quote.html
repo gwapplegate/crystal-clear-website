@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Request a Free Quote | Crystal Clear Window Cleaning Service Inc.</title>
-<meta name="description" content="Request a free quote for window cleaning, gutter cleaning, or pressure washing from Crystal Clear Window Cleaning Service Inc. — serving Kernersville and the Greater Triad, NC." />
+<title>Request a Free Estimate | Crystal Clear Window Cleaning Service Inc.</title>
+<meta name="description" content="Request a free estimate for window cleaning, gutter cleaning, or pressure washing from Crystal Clear Window Cleaning Service Inc. — serving Kernersville and the Greater Triad, NC." />
 <link rel="icon" href="images/crystal-clear-logo.png" />
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -137,8 +137,8 @@ src="https://www.facebook.com/tr?id=1612766737300568&ev=PageView&noscript=1"
   <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[36rem] h-96 rounded-full bg-brand-600/20 blur-3xl"></div>
   <div class="max-w-2xl mx-auto px-6 lg:px-10 relative">
     <p class="reveal eyebrow on-dark mb-4 justify-center flex">Free Estimate</p>
-    <h1 class="reveal font-heading text-white text-5xl sm:text-6xl font-semibold text-balance">Request a free quote.</h1>
-    <p class="reveal text-white/70 text-lg max-w-lg mx-auto mt-5 leading-relaxed">Tell us a little about your property and what you need cleaned. We'll get back to you within one business day.</p>
+    <h1 class="reveal font-heading text-white text-5xl sm:text-6xl font-semibold text-balance">Request a free estimate.</h1>
+    <p class="reveal text-white/70 text-lg max-w-lg mx-auto mt-5 leading-relaxed">Tell us what you need cleaned and where. We'll get back to you within one business day.</p>
   </div>
 </section>
 
@@ -150,14 +150,14 @@ src="https://www.facebook.com/tr?id=1612766737300568&ev=PageView&noscript=1"
       <div class="w-16 h-16 rounded-full bg-brand-600 flex items-center justify-center mx-auto mb-5">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="w-8 h-8 text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
       </div>
-      <h2 class="font-heading text-3xl text-navy-900 font-semibold">Thanks &mdash; we got your request!</h2>
+      <h2 class="font-heading text-3xl text-navy-900 font-semibold">Thanks &mdash; we got your estimate request!</h2>
       <p class="text-slate-600 mt-3 leading-relaxed">We'll review the details and reach out within one business day. Need it sooner? Call or text <a href="tel:+13365952873" class="text-brand-600 font-medium hover:underline">(336) 595-2873</a>.</p>
       <a href="index.html" class="btn btn-navy mt-8">Back to Home</a>
     </div>
 
     <form id="quote-form" class="bg-white border border-navy-100 rounded-2xl p-6 sm:p-10 shadow-sm space-y-10" novalidate>
       <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-      <input type="hidden" name="subject" value="New Quote Request — Crystal Clear Website" />
+      <input type="hidden" name="subject" value="New Estimate Request — Crystal Clear Website" />
       <input type="hidden" name="from_name" value="Crystal Clear Website" />
       <div class="qf-hp" aria-hidden="true"><label>Leave blank <input type="text" name="botcheck" tabindex="-1" autocomplete="off" /></label></div>
 
@@ -190,54 +190,9 @@ src="https://www.facebook.com/tr?id=1612766737300568&ev=PageView&noscript=1"
         <p id="err-services" class="text-red-600 text-sm mt-3" hidden>Please select at least one service.</p>
       </fieldset>
 
-      <!-- Window details -->
-      <fieldset>
-        <legend class="font-heading text-xl text-navy-900 font-semibold mb-4">2. About the job</legend>
-        <div class="grid sm:grid-cols-2 gap-5">
-          <div>
-            <label class="qf-label" for="property_type">Property type</label>
-            <select id="property_type" name="property_type" class="qf-input">
-              <option value="Home">Home</option>
-              <option value="Commercial / Business">Commercial / Business</option>
-            </select>
-          </div>
-          <div>
-            <label class="qf-label" for="stories">Number of stories</label>
-            <select id="stories" name="stories" class="qf-input">
-              <option value="">Not sure</option>
-              <option value="1 story">1 story</option>
-              <option value="2 stories">2 stories</option>
-              <option value="3 stories">3 stories</option>
-            </select>
-          </div>
-          <div>
-            <label class="qf-label" for="window_count">Approx. number of windows</label>
-            <input id="window_count" name="window_count" type="text" inputmode="numeric" class="qf-input" placeholder="e.g. 25 (a rough guess is fine)" />
-          </div>
-          <div>
-            <label class="qf-label" for="window_scope">Window cleaning type</label>
-            <select id="window_scope" name="window_scope" class="qf-input">
-              <option value="">N/A / not sure</option>
-              <option value="Inside and out">Inside and out</option>
-              <option value="Outside only">Outside only</option>
-              <option value="Inside only">Inside only</option>
-            </select>
-          </div>
-          <div class="sm:col-span-2">
-            <label class="qf-label" for="timeframe">When would you like service?</label>
-            <select id="timeframe" name="timeframe" class="qf-input">
-              <option value="Flexible">Flexible / no rush</option>
-              <option value="As soon as possible">As soon as possible</option>
-              <option value="Within 2 weeks">Within the next 2 weeks</option>
-              <option value="Within a month">Within the next month</option>
-            </select>
-          </div>
-        </div>
-      </fieldset>
-
       <!-- Address -->
       <fieldset>
-        <legend class="font-heading text-xl text-navy-900 font-semibold mb-4">3. Service address</legend>
+        <legend class="font-heading text-xl text-navy-900 font-semibold mb-4">2. Service address</legend>
         <div class="grid sm:grid-cols-6 gap-5">
           <div class="sm:col-span-6">
             <label class="qf-label" for="street">Street address <span class="text-red-600">*</span></label>
@@ -260,7 +215,7 @@ src="https://www.facebook.com/tr?id=1612766737300568&ev=PageView&noscript=1"
 
       <!-- Contact -->
       <fieldset>
-        <legend class="font-heading text-xl text-navy-900 font-semibold mb-4">4. How can we reach you?</legend>
+        <legend class="font-heading text-xl text-navy-900 font-semibold mb-4">3. How can we reach you?</legend>
         <div class="grid sm:grid-cols-2 gap-5">
           <div class="sm:col-span-2">
             <label class="qf-label" for="name">Full name <span class="text-red-600">*</span></label>
@@ -291,7 +246,7 @@ src="https://www.facebook.com/tr?id=1612766737300568&ev=PageView&noscript=1"
 
       <div>
         <p id="form-error" class="text-red-600 text-sm mb-4" hidden></p>
-        <button type="submit" id="quote-submit" class="btn btn-primary w-full text-base py-4">Send My Quote Request</button>
+        <button type="submit" id="quote-submit" class="btn btn-primary w-full text-base py-4">Send My Estimate Request</button>
         <p class="text-slate-500 text-xs mt-4 text-center leading-relaxed">We only use your information to respond to your request. See our <a href="privacy.html" class="underline hover:text-brand-600">Privacy Policy</a>.</p>
       </div>
     </form>
